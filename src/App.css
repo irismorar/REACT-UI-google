@@ -1,0 +1,158 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(232, 234, 237, .08);
+}
+
+.display-container {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.topbar-section {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+.topbar-icon:hover {
+  text-decoration: underline;
+  cursor: grab;
+}
+
+.topbar-icon-apps {
+  border: 2px solid #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.topbar-icon-apps:hover {
+cursor: grab;
+}
+
+.topbar-icon-user {
+  border: 2px solid  #389883;
+  background-color: #389883;
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.topbar-icon-user:hover {
+cursor: grab;
+}
+
+.main-frame-container {
+  width: 40%;
+  flex: 15;
+  min-width: 30rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main-title {
+  font-size: 8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #333;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25rem;
+}
+
+.mostvisited-area {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-icon {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+}
+
+.app-icon div {
+  width: 4rem;
+  height: 4rem;
+  background-color: #444;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-icon div div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.button-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.customize-button {
+  width: 18rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  background-color: rgb(18, 82, 131);
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: lightblue;
+}
+
+.customize-button:hover {
+  background-color: #1d85af;
+}
+
+.customize-button > div {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: lightblue;
+}
