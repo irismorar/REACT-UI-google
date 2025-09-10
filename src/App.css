@@ -133,7 +133,7 @@ input[type="text"] {
   justify-content: flex-end;
 }
 
-.customize-button {
+.button-container div {
   width: 18rem;
   height: 2.5rem;
   border-radius: 20px;
@@ -146,11 +146,11 @@ input[type="text"] {
   color: lightblue;
 }
 
-.customize-button:hover {
+.button-container div:hover {
   background-color: #1d85af;
 }
 
-.customize-button > div {
+.button-container div > div {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
