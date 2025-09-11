@@ -4,10 +4,10 @@ import MostVisitedArea from "./MostVisitedArea";
 
 export default function MainArea() {
   return (
-    <section className="main-frame-container">
+    <main>
       <TitleArea />
       <SearchArea />
       <MostVisitedArea />
-    </section>
+    </main>
   );
 }

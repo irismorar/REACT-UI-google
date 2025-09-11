@@ -5,12 +5,14 @@
 body {
   margin: 0;
   background-color: rgba(232, 234, 237, .08);
+  overflow-y: hidden;
+  height: 100%;
 }
 
 .display-container {
   color: #fff;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 2rem;
   font-size: 1.5rem;
   opacity: 0.9;
@@ -22,7 +24,7 @@ body {
 
 .topbar-section {
   width: 100%;
-  flex: 1;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -44,8 +46,7 @@ body {
 cursor: grab;
 }
 
-.topbar-icon-user {
-  border: 2px solid  #389883;
+.topbar-section > div:last-child {
   background-color: #389883;
   border-radius: 50%;
   width: 3.75rem;
@@ -56,13 +57,13 @@ cursor: grab;
   font-weight: 600;
 }
 
-.topbar-icon-user:hover {
+.topbar-section > div:last-child:hover {
 cursor: grab;
 }
 
-.main-frame-container {
+main {
   width: 40%;
-  flex: 15;
+  height: calc(100vh - 14rem);
   min-width: 30rem;
   margin: 0 auto;
   display: flex;
@@ -108,7 +109,7 @@ input[type="text"] {
   font-size: 1.5rem;
 }
 
-.app-icon div {
+.app-icon > div {
   width: 4rem;
   height: 4rem;
   background-color: #444;
@@ -118,22 +119,22 @@ input[type="text"] {
   justify-content: center;
 }
 
-.app-icon div div {
+.app-icon > div > div {
   width: 2.5rem;
   height: 2.5rem;
   border: 2px solid #fff;
   border-radius: 50%;
 }
 
-.button-container {
+footer {
   width: 100%;
-  flex: 1;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.button-container div {
+footer > div {
   width: 18rem;
   height: 2.5rem;
   border-radius: 20px;
@@ -146,13 +147,13 @@ input[type="text"] {
   color: lightblue;
 }
 
-.button-container div:hover {
+footer > div:hover {
   background-color: #1d85af;
 }
 
-.button-container div > div {
-  width: 1.5rem;
-  height: 1.5rem;
+footer > div > div {
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background-color: lightblue;
 }

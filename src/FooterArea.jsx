@@ -1,10 +1,10 @@
 export default function FooterArea() {
   return (
-    <div className="button-container">
+    <footer>
       <div>
         <div></div>
         Customize Chrome
       </div>
-    </div>
+    </footer>
   );
 }
